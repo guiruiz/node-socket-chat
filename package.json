@@ -1,0 +1,11 @@
+{
+  "name": "socket-chat",
+  "version": "0.0.1",
+  "description": "Web chat powered by socket.io",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "express": "^4.16.4",
+    "jquery": "^3.4.1",
+    "socket.io": "^2.2.0"
+  }
+}

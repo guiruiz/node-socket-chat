@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket Web Chat</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+  <body>
+
+    <div class="container-fluid">
+
+      <div class="row chat-box">
+
+        <div class="col-sm-3 sidebar">
+          <div class="col-sm-12">
+            <h3>Socket Chat</h3>
+          </div>
+          <div class="col-sm-12 chats">
+            <ul>
+              <li class="selected"><div class="picture"></div><div class="name">Global</div></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <ul id="messages"></ul>
+          <form id="message-form">
+            <input id="message-textfield" autocomplete="off" placeholder="Write a message..."/>
+            <button>SEND</button>
+          </form>
+        </form>
+
+      </div>
+
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/socket.io.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
