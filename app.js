@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var http = require('http').createServer(app);
 var io = require('socket.io')(http)
+var port = process.env.SOCKET_CHAT_PORT || 5000
 var master_socket = null
 
 app.use('/js', express.static(__dirname + '/public/js'));
@@ -10,8 +11,12 @@ app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/css', express.static(__dirname + '/public/css'));
 
-app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
+// app.get('/', function(req, res){
+//   res.sendFile(__dirname + '/index.html');
+// });
+
+app.get('/hello-message', (req, res) => {
+  res.send({ express: 'Hello From Express' });
 });
 
 io.on('connection', function(socket){
@@ -35,6 +40,6 @@ io.on('connection', function(socket){
 
 });
 
-http.listen(8080, function(){
-  console.log('Listening on 8080')
+http.listen(port, function(){
+  console.log(`Listening on ${port}`)
 });
