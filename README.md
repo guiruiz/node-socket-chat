@@ -10,7 +10,8 @@ I made this project to learn more about NodeJS native modules and client-server 
 - Add “{user} is typing” functionality.
 - Show who’s online.
 - Add private messaging.
-- Implement a Node.js native module (C++) to encode messages (Caesar Cipher?)
+- Implement end to end encryption (RSA secret key exchange) https://gist.github.com/guiruiz/0909e8a91982e0937cf665952cd346b3 
+- Find a reason to implement a Node.js native module (C++) 
 - Persist messages on a NoSQL database
 - Implement React
 
