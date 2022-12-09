@@ -4,7 +4,7 @@
   "description": "Web chat powered by socket.io",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "jquery": "^3.4.1",
     "socket.io": "^2.2.0"
   }
